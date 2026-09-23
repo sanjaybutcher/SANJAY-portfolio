@@ -1952,7 +1952,7 @@ ul {
 
 /* ================= RESPONSIVE ================= */
 
-@media (max-width: 1050px) {
+@media (max-width: 768px) {
   .nav-links {
     gap: 17px;
   }
@@ -1962,6 +1962,7 @@ ul {
   }
 
   .hero-layout {
+     grid-template-columns: 1fr;
     gap: 45px;
   }
 

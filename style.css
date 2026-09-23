@@ -1961,7 +1961,7 @@ ul {
     font-size: 0.82rem;
   }
 
-  .hero-layout {
+  .hero-inner {
      grid-template-columns: 1fr;
     gap: 45px;
   }
@@ -1984,7 +1984,7 @@ ul {
     padding-top: 80px;
   }
 
-  .hero-layout,
+  .hero-inner,
   .about-grid,
   .education-layout,
   .contact-grid {

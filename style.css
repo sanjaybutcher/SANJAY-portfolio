@@ -380,7 +380,7 @@ ul {
   padding: 105px 0 75px;
 }
 
-.hero-inner {
+.hero-layout {
   display: grid;
   grid-template-columns: 1.4fr 0.6fr;
   align-items: center;
@@ -1974,7 +1974,7 @@ ul {
     font-size: 0.82rem;
   }
 
-  .hero-inner {
+  .hero-layout {
     grid-template-columns: 1fr;
     gap: 45px;
   }
@@ -1997,7 +1997,7 @@ ul {
     padding-top: 80px;
   }
 
-  .hero-inner,
+  .hero-layout,
   .about-grid,
   .education-layout,
   .contact-grid {

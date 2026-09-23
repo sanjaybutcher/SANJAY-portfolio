@@ -381,10 +381,23 @@ ul {
 }
 
 .hero-inner {
-    display: grid;
-    grid-template-columns: 1.4fr 0.6fr;
-    align-items: center;
-    gap: 3rem;
+  display: grid;
+  grid-template-columns: 1.4fr 0.6fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+/* FIX: force text block to always sit in the left column and the
+   dashboard visual to always sit in the right column, no matter what
+   order the two blocks appear in the HTML. This was the bug causing
+   the giant empty gap on the right and the dashboard card landing
+   on the left. */
+.hero-content {
+  order: 1;
+}
+
+.hero-visual {
+  order: 2;
 }
 
 .status-pill {
@@ -1962,7 +1975,7 @@ ul {
   }
 
   .hero-inner {
-     grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     gap: 45px;
   }
 
@@ -1993,10 +2006,12 @@ ul {
 
   .hero-content {
     max-width: 720px;
+    order: 1;
   }
 
   .hero-visual {
     min-height: 480px;
+    order: 2;
   }
 
   .about-copy {

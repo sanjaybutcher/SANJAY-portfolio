@@ -376,7 +376,8 @@ ul {
 .hero {
   min-height: calc(100vh - 78px);
   display: flex;
-  align-items: center;
+  flex-direction: column;
+   justify-content: center;
   padding: 105px 0 75px;
 }
 
